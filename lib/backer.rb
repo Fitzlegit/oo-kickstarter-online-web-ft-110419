@@ -13,8 +13,4 @@ class Backer
     project.add_backer(project)
   end
 
-  def projects
-    Project.all.select {|project| project.backers == self}
-  end
-
 end
