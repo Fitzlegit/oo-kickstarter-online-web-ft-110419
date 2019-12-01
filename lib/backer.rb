@@ -13,8 +13,8 @@ class Backer
   end
 
   def projects
-    Project.all.select {|project| project.backers == self}
     binding.pry
+    Project.all.select {|project| project.backers == self}
   end
 
 end
