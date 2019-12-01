@@ -14,6 +14,7 @@ class Backer
 
   def projects
     Project.all.select {|project| project.backers == self}
+    binding.pry
   end
 
 end
