@@ -18,7 +18,7 @@ class Project
   end
 
   def save
-    @@all << save
+    @@all << self
   end
 
 end
