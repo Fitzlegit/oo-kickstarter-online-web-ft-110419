@@ -10,10 +10,10 @@ class Backer
 
   def back_project(project)
     @backed_projects << project
-    Project.backers
-    binding.pry
   end
 
-
+  def projects
+    Project.all.select {|project| project.backers == self}
+  end
 
 end
